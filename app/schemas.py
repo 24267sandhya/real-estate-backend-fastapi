@@ -11,7 +11,7 @@ class Locality(LocalityBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class PropertyBase(BaseModel):
     property_name: str
@@ -25,4 +25,4 @@ class Property(PropertyBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
